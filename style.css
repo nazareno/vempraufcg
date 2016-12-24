@@ -1,0 +1,817 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  background: #fafafa; }
+
+h1 {
+  font-family: 'intro_regular';
+  font-size: 42px;
+  color: #ffffff; }
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px; }
+
+a {
+  color: #ffffff;
+}
+
+.content {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box; }
+  .content .img-text {
+    float: right;
+    margin-right: 20px;
+    z-index: 1;
+    max-width: 450px;
+    margin-top: 0%; }
+    .content .img-text img {
+      width: 100%;
+      height: auto; }
+
+.clear:after {
+  content: ' ';
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0; }
+
+.module {
+  display: block;
+  height: auto; }
+  .module img {
+    width: 100%;
+    height: auto; }
+
+.back {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  top: 15px;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  display: block;
+  font-size: 40px;
+  opacity: 0; }
+  .back a {
+    color: #ffffff; }
+
+.home {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  background: #394157;
+  overflow: hidden; }
+  .home .top {
+    width: 100%;
+    height: 145px;
+    background: #394157;
+    position: relative;
+    z-index: 20; }
+    .home .top .logo {
+      float: left;
+      width: 200px;
+      height: auto;
+      position: relative;
+      top: -50px; }
+      .home .top .logo img {
+        width: 95%;
+        height: auto; }
+    .home .top .slogan {
+      text-transform: uppercase;
+      font-size: 42px;
+      font-family: 'Oswald', sans-serif;
+      text-align: right;
+      width: 40%;
+      float: right;
+      position: relative;
+      color: #ffffff; }
+  .home .video {
+    width: 100%;
+    height: 100%;
+    min-height: 100%; }
+    .home .video iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      position: relative;
+      top: -145px;
+      z-index: 1;
+      box-sizing: border-box;
+      opacity: 0.7; }
+  .home .menu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    max-height: 400px;
+    z-index: 20; }
+    .home .menu ul {
+      list-style: none; }
+      .home .menu ul li {
+        display: inline-block;
+        width: 14.28%;
+        min-height: 130px;
+        float: left;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        text-align: center; }
+        .home .menu ul li img {
+          width: 90%;
+          height: auto;
+          display: block;
+          margin: 0 auto; }
+        .home .menu ul li a {
+          color: #ffffff;
+          font-family: 'Oswald', sans-serif;
+          font-size: 16px; }
+        .home .menu ul li:nth-child(3n+1) {
+          background: #004d7c;
+          position: relative; }
+          .home .menu ul li:nth-child(3n+1):after {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            display: block;
+            content: ' ';
+            background: #004d7c;
+            right: -10px;
+            top: 50%;
+            margin-top: -5px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            z-index: 2; }
+        .home .menu ul li:nth-child(3n+2) {
+          background: #404251; }
+        .home .menu ul li:nth-child(3n+3) {
+          background: #6080a0; }
+      .home .menu ul .gray {
+        position: relative; }
+        .home .menu ul .gray:after {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          display: block;
+          content: ' ';
+          background: #404251;
+          right: -10px;
+          top: 50%;
+          margin-top: -5px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          z-index: 2; }
+      .home .menu ul .blue {
+        position: relative; }
+        .home .menu ul .blue:after {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          display: block;
+          content: ' ';
+          background: #6080a0;
+          right: -10px;
+          top: 50%;
+          margin-top: -5px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          z-index: 2; }
+
+#curso, #cidade, #casa, #saudade, #sem-saudade, #me-manter, #mercado, #gostei {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 5%; }
+  #curso .text, #cidade .text, #casa .text, #saudade .text, #sem-saudade .text, #me-manter .text, #mercado .text, #gostei .text {
+    max-width: 600px;
+    float: left;
+    padding: 20px 10px;
+    color: #ffffff; }
+
+#curso, #saudade, #mercado {
+  background: #004d7c; }
+
+#cidade, #me-manter {
+  background: #404251; }
+
+#sem-saudade, #gostei {
+  background: #6080a0; }
+
+.liked input[type="text"], .liked input[type="email"], #gostei input[type="text"], #gostei input[type="email"] {
+  height: 30px;
+  border: 1px solid #394157;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 35px;
+  box-sizing: border-box; }
+
+.liked .input-user {
+  position: relative;
+  float: left;
+  width: 100%; }
+  .liked .input-user .user {
+    background-image: url(images/user-icon.png);
+    background-repeat: no-repeat;
+    background-position: 6px 5px; }
+.liked .input-email {
+  position: relative;
+  float: left;
+  width: 100%; }
+  .liked .input-email .email {
+    background-color: #ffffff;
+    background-image: url(images/email-icon.png);
+    background-repeat: no-repeat;
+    background-position: 6px 5px; }
+.liked .send {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #394157;
+  background-image: url(images/send-icon.png);
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  height: 30px;
+  border: none;
+  margin-top: 10px; }
+
+#gostei input {
+  width: 100%;
+  margin: 15px 0; }
+#gostei .name {
+  background-image: url(images/user-icon.png);
+  background-repeat: no-repeat;
+  background-position: 8px 8px; }
+#gostei .email {
+  background-image: url(images/email-icon.png);
+  background-repeat: no-repeat;
+  background-position: 8px 8px; }
+#gostei .send {
+  background-color: #394157;
+  background-image: url(images/send-icon.png);
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+  color: #ffffff;
+  height: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+  .content-home {
+    max-width: 320px;
+    margin: 0 auto;
+    position: relative; }
+
+  .menu {
+    display: none; }
+
+  #curso, #cidade, #casa, #saudade, #sem-saudade, #me-manter, #mercado, #gostei {
+    min-height: 640px; }
+
+  .logo, .module {
+    width: 40%; }
+    .logo:after, .module:after {
+      width: 45px;
+      height: 45px; }
+
+  .start {
+    top: 10px;
+    left: 185px;
+    padding: 5px !important;
+    text-align: center;
+    font-size: 12px; }
+    .start:after {
+      left: 90px;
+      top: 17px;
+      width: 30px !important;
+      height: 30px !important;
+      -webkit-transform: rotate(40deg);
+      -moz-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      -o-transform: rotate(40deg);
+      transform: rotate(40deg); }
+
+  .course {
+    top: 30px;
+    left: 170px; }
+    .course:after {
+      left: -60px;
+      top: 45px; }
+
+  .city {
+    top: 20px;
+    left: 5px; }
+    .city:after {
+      right: -48px;
+      bottom: -8px;
+      -webkit-transform: rotate(220deg);
+      -moz-transform: rotate(220deg);
+      -ms-transform: rotate(220deg);
+      -o-transform: rotate(220deg);
+      transform: rotate(220deg); }
+
+  .miss {
+    top: 150px;
+    left: 175px; }
+    .miss:after {
+      right: -15px;
+      bottom: -35px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+  .not-miss {
+    top: 250px;
+    left: 175px; }
+    .not-miss:after {
+      left: -35px;
+      top: -5px;
+      -webkit-transform: scale(-1, 1);
+      -moz-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      transform: scale(-1, 1); }
+
+  .how-to-live {
+    top: 290px;
+    left: 5px; }
+    .how-to-live:after {
+      bottom: -40px;
+      left: -10px;
+      -webkit-transform: scale(-1, 1) rotate(70deg);
+      -moz-transform: scale(-1, 1) rotate(70deg);
+      -ms-transform: scale(-1, 1) rotate(70deg);
+      -o-transform: scale(-1, 1) rotate(70deg);
+      transform: scale(-1, 1) rotate(70deg); }
+
+  .companies {
+    top: 400px;
+    left: 0px; }
+    .companies:after {
+      top: -20px;
+      right: -60px;
+      -webkit-transform: scale(-1, 1) rotate(15deg);
+      -moz-transform: scale(-1, 1) rotate(15deg);
+      -ms-transform: scale(-1, 1) rotate(15deg);
+      -o-transform: scale(-1, 1) rotate(15deg);
+      transform: scale(-1, 1) rotate(15deg); }
+
+  .liked {
+    top: 410px;
+    left: 175px; }
+    .liked .input-user, .liked .input-email, .liked .send {
+      display: none; } }
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .content-home {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative; }
+
+  .module, .logo {
+    width: 45%; }
+    .module:after, .logo:after {
+      width: 55px;
+      height: 55px; }
+
+  .start {
+    top: 10px;
+    left: 250px;
+    padding: 10px !important;
+    font-size: 14px; }
+    .start:after {
+      left: 70px;
+      top: 36px;
+      width: 35px !important;
+      height: 35px !important;
+      -webkit-transform: rotate(40deg);
+      -moz-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      -o-transform: rotate(40deg);
+      transform: rotate(40deg); }
+
+  .course {
+    top: 40px;
+    left: 200px; }
+    .course:after {
+      left: -65px;
+      top: 55px; }
+
+  .city {
+    top: 5px;
+    left: -15px; }
+    .city:after {
+      right: -50px;
+      bottom: -30px;
+      -webkit-transform: rotate(215deg);
+      -moz-transform: rotate(215deg);
+      -ms-transform: rotate(215deg);
+      -o-transform: rotate(215deg);
+      transform: rotate(215deg); }
+
+  .miss {
+    top: 240px;
+    left: 230px; }
+    .miss:after {
+      right: 1px;
+      bottom: -60px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+  .not-miss {
+    top: 425px;
+    left: 225px; }
+    .not-miss:after {
+      left: -35px;
+      bottom: -20px;
+      -webkit-transform: rotate(165deg);
+      -moz-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+      -o-transform: rotate(165deg);
+      transform: rotate(165deg); }
+
+  .how-to-live {
+    top: 450px;
+    left: -15px; }
+    .how-to-live:after {
+      top: 140px;
+      left: -5px;
+      -webkit-transform: scale(-1, 1) rotate(35deg);
+      -moz-transform: scale(-1, 1) rotate(35deg);
+      -ms-transform: scale(-1, 1) rotate(35deg);
+      -o-transform: scale(-1, 1) rotate(35deg);
+      transform: scale(-1, 1) rotate(35deg); }
+
+  .companies {
+    top: 640px;
+    left: -15px; }
+    .companies:after {
+      bottom: -50px;
+      left: 180px;
+      -webkit-transform: rotate(235deg);
+      -moz-transform: rotate(235deg);
+      -ms-transform: rotate(235deg);
+      -o-transform: rotate(235deg);
+      transform: rotate(235deg); }
+
+  .liked {
+    top: 640px;
+    left: 235px; }
+    .liked .input-user {
+      margin-bottom: 5px; }
+      .liked .input-user .user {
+        width: 100%; }
+    .liked .input-email .email {
+      width: 100%; } }
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  #curso, #cidade, #casa, #saudade, #sem-saudade, #me-manter, #mercado, #gostei {
+    min-height: 100%;
+    height: 100%; }
+
+  .module {
+    width: 21%; }
+    .module:after {
+      width: 90px;
+      height: 90px; }
+
+  .home {
+    min-height: 720px; }
+    .home .logo {
+      width: 300px;
+      top: 0;
+      left: 15px; }
+    .home .start {
+      top: 50px;
+      left: 250px; }
+      .home .start:after {
+        left: 155px;
+        top: 5px;
+        width: 90px;
+        height: 90px;
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg); }
+    .home .course {
+      top: 95px;
+      left: 320px; }
+      .home .course:after {
+        left: -120px;
+        top: 90px; }
+    .home .city {
+      top: 100px;
+      left: 5%; }
+      .home .city:after {
+        right: -35px;
+        bottom: -100px;
+        -webkit-transform: rotate(255deg);
+        -moz-transform: rotate(255deg);
+        -ms-transform: rotate(255deg);
+        -o-transform: rotate(255deg);
+        transform: rotate(255deg); }
+    .home .miss {
+      bottom: 90px;
+      left: 28%; }
+      .home .miss:after {
+        right: 20px;
+        bottom: 170px;
+        -webkit-transform: rotate(280deg);
+        -moz-transform: rotate(280deg);
+        -ms-transform: rotate(280deg);
+        -o-transform: rotate(280deg);
+        transform: rotate(280deg); }
+    .home .not-miss {
+      position: absolute;
+      bottom: 50%;
+      margin-bottom: -75px;
+      left: 50%;
+      margin-left: -10px; }
+      .home .not-miss:after {
+        right: -30px;
+        bottom: 195px;
+        -webkit-transform: rotate(290deg);
+        -moz-transform: rotate(290deg);
+        -ms-transform: rotate(290deg);
+        -o-transform: rotate(290deg);
+        transform: rotate(290deg); }
+    .home .how-to-live {
+      top: 11%;
+      right: 5%; }
+      .home .how-to-live:after {
+        top: 170px;
+        right: 40px; }
+    .home .companies {
+      top: 44%;
+      right: 5%; }
+      .home .companies:after {
+        top: 120px;
+        right: 240px; }
+    .home .liked {
+      top: 70%;
+      right: 22%; }
+      .home .liked .input-user {
+        width: 170px;
+        margin-left: -55px !important; }
+      .home .liked .input-email {
+        width: 170px;
+        margin-right: -75px !important; } }
+@media only screen and (min-width: 1281px) {
+  #curso, #cidade, #casa, #saudade, #sem-saudade, #me-manter, #mercado, #gostei {
+    min-height: 100%;
+    height: 100%; }
+
+  .module {
+    width: 250px; }
+    .module:after {
+      width: 100px;
+      height: 90px; }
+
+  .home {
+    min-height: 720px; }
+    .home .logo {
+      top: 0;
+      left: 20px;
+      width: 360px; }
+    .home .start {
+      top: 65px;
+      left: 300px; }
+      .home .start:after {
+        left: 165px;
+        top: 10px;
+        width: 90px;
+        height: 90px;
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg); }
+    .home .course {
+      top: 130px;
+      left: 385px; }
+      .home .course:after {
+        left: -135px;
+        top: 110px;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); }
+    .home .city {
+      top: 170px;
+      left: 5%; }
+      .home .city:after {
+        right: 25px;
+        bottom: -110px;
+        -webkit-transform: rotate(240deg);
+        -moz-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+        -o-transform: rotate(240deg);
+        transform: rotate(240deg); }
+    .home .miss {
+      bottom: 35px;
+      left: 26%; }
+      .home .miss:after {
+        right: 95px;
+        bottom: 185px;
+        -webkit-transform: rotate(285deg);
+        -moz-transform: rotate(285deg);
+        -ms-transform: rotate(285deg);
+        -o-transform: rotate(285deg);
+        transform: rotate(285deg); }
+    .home .not-miss {
+      position: absolute;
+      bottom: 50%;
+      margin-bottom: -145px;
+      left: 50%;
+      margin-left: -35px; }
+      .home .not-miss:after {
+        right: 0px;
+        bottom: 250px;
+        -webkit-transform: rotate(285deg);
+        -moz-transform: rotate(285deg);
+        -ms-transform: rotate(285deg);
+        -o-transform: rotate(285deg);
+        transform: rotate(285deg); }
+    .home .how-to-live {
+      top: 15%;
+      right: 5%; }
+      .home .how-to-live:after {
+        top: 170px;
+        right: 100px;
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        transform: rotate(20deg); }
+    .home .companies {
+      top: 48%;
+      right: 5%; }
+      .home .companies:after {
+        top: 120px;
+        right: 260px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg); }
+    .home .liked {
+      top: 75%;
+      right: 290px; }
+      .home .liked .input-user {
+        width: 170px;
+        margin-left: -48px; }
+      .home .liked .input-email {
+        width: 170px;
+        margin-right: -48px;
+        float: right; } }
+@media only screen and (min-width: 1441px) {
+  #curso, #cidade, #casa, #saudade, #sem-saudade, #me-manter, #mercado, #gostei {
+    min-height: 100%;
+    height: 100%; }
+
+  .content-home {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative; }
+
+  .home .logo {
+    top: 0;
+    left: 25px; }
+  .home .start {
+    top: 65px;
+    left: 300px; }
+    .home .start:after {
+      left: 165px;
+      top: 10px;
+      width: 100px;
+      height: 100px; }
+  .home .course {
+    top: 130px;
+    left: 385px; }
+    .home .course:after {
+      left: -115px;
+      top: 120px;
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+      transform: rotate(-10deg); }
+  .home .city {
+    top: 170px;
+    left: 150px; }
+    .home .city:after {
+      right: -10px;
+      bottom: -110px;
+      -webkit-transform: rotate(245deg);
+      -moz-transform: rotate(245deg);
+      -ms-transform: rotate(245deg);
+      -o-transform: rotate(245deg);
+      transform: rotate(245deg); }
+  .home .miss {
+    top: 635px;
+    left: 470px; }
+    .home .miss:after {
+      right: 60px;
+      top: -110px;
+      -webkit-transform: rotate(280deg);
+      -moz-transform: rotate(280deg);
+      -ms-transform: rotate(280deg);
+      -o-transform: rotate(280deg);
+      transform: rotate(280deg); }
+  .home .not-miss {
+    position: absolute;
+    top: 50%;
+    margin-top: 145px;
+    left: 50%;
+    margin-left: -50px; }
+    .home .not-miss:after {
+      right: -50px;
+      top: -95px;
+      -webkit-transform: rotate(280deg);
+      -moz-transform: rotate(280deg);
+      -ms-transform: rotate(280deg);
+      -o-transform: rotate(280deg);
+      transform: rotate(280deg); }
+  .home .how-to-live {
+    top: 150px;
+    right: 10%; }
+    .home .how-to-live:after {
+      top: 190px;
+      right: 100px;
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      transform: rotate(30deg); }
+  .home .companies {
+    top: 450px;
+    right: 10%; }
+    .home .companies:after {
+      top: 160px;
+      right: 260px;
+      -webkit-transform: rotate(345deg);
+      -moz-transform: rotate(345deg);
+      -ms-transform: rotate(345deg);
+      -o-transform: rotate(345deg);
+      transform: rotate(345deg); }
+  .home .liked {
+    top: 720px;
+    right: 330px; } }
+
+/*# sourceMappingURL=style.css.map */
